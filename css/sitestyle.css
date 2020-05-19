@@ -1,0 +1,32 @@
+.logo{
+	padding-left: 20px;
+}
+
+.ssilka{
+color: red;
+text-decoration: none;
+}
+.ssilka:hover{
+color: red;
+text-decoration: none;
+}
+.ssilka:visited{
+color: red;
+text-decoration: none;
+}
+.t1{
+	color: blue;
+}
+.center{
+position: relative;
+padding-top: 10px;
+transform: translate(-50%, 0);
+}
+#main_block{
+	border: 1px solid black;
+}
+footer{
+	background: #271C19;
+	color: white;
+	width: 100%;
+}
