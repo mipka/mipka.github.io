@@ -18,6 +18,6 @@
 	 	'".$text."',
 	  	'".$author."')";
 	  	$result = mysqli_query($GLOBALS['link'], $query ) ;
-
+	  	echo "<script>document.location.href='../user.php'</script>";
 
 				?>
