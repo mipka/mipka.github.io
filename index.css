@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+body{
+	background: url(../img/inback.jpg);
+	width: 100%;
+}
+.btn {
+	margin-left: 50%;
+    margin-top: 50px;
+  display: inline-block;
+  padding: 15px 35px;
+  background: linear-gradient(150deg, rgba(51, 106, 206, 1) 0%, rgba(57, 114, 213, 1) 50%, rgba(35, 90, 191, 1) 50%, rgba(1, 60, 163, 1) 100%);
+ 
+  color: #fff;
+  border-radius: 35px;
+}
+
+.btn:hover {
+  background: linear-gradient(150deg, rgba(1, 60, 163, 1) 0%, rgba(35, 90, 191, 1) 50%, rgba(57, 114, 213, 1) 50%, rgba(51, 106, 206, 1) 100%);
+}
+.first{
+	text-align: center;
+}
+.second{
+	text-align: center;
+}
+#btn{
+	font-size: 20px;
+}
+.t1{
+	
+ color: #ffffff;
+ text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffff00, 0 0 80px #ffff00, 0 0 90px #ffff00, 0 0 100px #ffff00, 0 0 150px #ffff00;
+text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+ font-size: 15px;
+	
+}
+@font-face {
+ font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 700;
+ src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}

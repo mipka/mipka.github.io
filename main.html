@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> registration/authorisation</title>
+
+	<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container" >
+
+	<div class="col-xl-12">
+
+	<p class="logo"><img src="../img/logotip.png" width="125px;" height="125px;" ></p>
+	<p class="logo"><img src="../img/image.png"  width="25%" height="25%" ></p>
+
+	
+
+		<div class="buts">
+		<button class="but1" id="but1" onclick="reg()"> Регистрация </button>
+		<button class="but2" id="but2" onclick="auto()"> Авторизация</button>
+		</div>
+
+ 	</div>
+						<div class="forma" id="forma">
+							<form name="test" method="post" action ="http://localhost/php/reg.php">
+
+				 	<h2 id="hh2"><u>Регистрация</u></h2>
+
+				 			<div id="name_sur"><p>Имя:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"></p>
+				 			<p>Фамилия:<input type="text" name="surname" ></p></div>
+
+				 	<p>E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="E-mail" name="E_mail" ></p>
+
+				 	<p>Пароль:&nbsp;&nbsp;&nbsp;<input type="password" name="password" minlength="6"  placeholder="минимум 6 символов"></p>
+
+				 	
+				 	<button type="submit" id="btn" class="btn btn-success">Зарегистрироваться!</button>
+					 		</form>
+						</div>
+
+
+<div class="forma2" id="forma2">
+							<form name="test" method="post" action="http://localhost/php/auto.php">
+
+				 	<h2 id="hh2"><u>Авторизация</u></h2>
+
+				 			
+				 	<p>E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="E-mail" name="E_mail" ></p>
+
+				 	<p>Пароль:&nbsp;&nbsp;<input type="password" name="password"  placeholder="минимум 6 символов"></p>
+
+				 	
+				 	
+
+				 	<button type="submit" id="in" class="btn btn-success">Войти</button>
+					 		</form>
+						</div>
+
+
+<footer>&copy;mipka</footer>
+
+		
+</div>
+
+
+<script>
+	function auto () {
+		document.getElementById('forma').style.display = 'none';
+			document.getElementById('forma2').style.display = 'block';
+						}
+	function reg(){
+	document.getElementById('forma2').style.display = 'none';
+			document.getElementById('forma').style.display = 'block';
+						}
+
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
